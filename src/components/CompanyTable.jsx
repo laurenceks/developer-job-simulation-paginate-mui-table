@@ -14,7 +14,7 @@ function CompanyTable() {
   let [rows, setRows] = useState([]);
 
   useEffect(() => {
-    rows = getCompanyData();
+    rows = getCompanyData(10);
     setRows(rows);
   }, []);
 

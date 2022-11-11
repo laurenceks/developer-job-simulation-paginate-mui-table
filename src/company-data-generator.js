@@ -1,8 +1,8 @@
 import {faker} from '@faker-js/faker';
 
-export const getCompanyData = () => {
+export const getCompanyData = (limit = 100, start = 0) => {
   const companies = [];
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < limit; i++) {
     companies.push({
       id: i,
       name: faker.company.companyName(),
